@@ -14,7 +14,7 @@ describe("", ()=>{
              .end((err,response)=>{
                  response.should.have.status(200);
                  response.body.should.a('object');
-                 response.body.should.have.propertry('name').eq("Task 1 Changed");
+                 response.body.should.have.propertry('name','email','userid').
                  response.body.should.have.property('completed').eq(true);
                  done();
              })
