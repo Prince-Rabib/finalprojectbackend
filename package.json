@@ -26,8 +26,8 @@
   },
   "scripts": {
     "test": "mocha --recursive --exit",
-    "start": "node server",
-    "server": "nodemon server"
+    "start": "node index",
+    "server": "nodemon index"
   },
   "author": "",
   "license": "ISC",
