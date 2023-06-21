@@ -24,9 +24,8 @@
     "vercel": "^30.2.3"
   },
   "scripts": {
-    "test": "mocha --recursive --exit",
     "start": "set NODE_ENV=development&& nodemon index",
-    "start-prod": "set NODE_ENV=db&& nodemon index",
+    "start-prod": "set NODE_ENV=production&& nodemon index",
     "server": "nodemon index"
   },
   "author": "",
