@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "practice node js",
   "main": "server.js",
+  "engines": {
+    "node": "14.x"
+  },
   "dependencies": {
     "axios": "^0.24.0",
     "bcrypt": "^5.0.1",
