@@ -4,7 +4,7 @@ const auth = require('../middleware/auth');
 
 const gravatar = require('gravatar');
 
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 
 const User = require('../Models/User');
 const jwt = require('jsonwebtoken');
