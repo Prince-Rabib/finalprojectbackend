@@ -25,7 +25,6 @@
   },
   "scripts": {
     "start": "set NODE_ENV=development&& nodemon index",
-    "start-prod": "set NODE_ENV=production&& nodemon index",
     "server": "nodemon index"
   },
   "author": "",
