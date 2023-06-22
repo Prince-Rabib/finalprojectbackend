@@ -110,7 +110,7 @@ router.post(
 
       jwt.sign(
         payload,
-        config.get('secretkey'),
+        config.get("Mombu1234$"),
         { expiresIn: 360000 },
         (err, token) => {
           if (err) throw err;
