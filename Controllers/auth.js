@@ -8,7 +8,6 @@ const bcrypt = require('bcryptjs');
 
 const User = require('../Models/User');
 const jwt = require('jsonwebtoken');
-const config = require('config');
 const { check, validationResult } = require('express-validator');
 
 router.get('/', auth ,async(req, res) => {
@@ -56,10 +55,11 @@ router.post(
           id: user.id,
         },
       };
-
+     
+  const key = "Mombu1234$";
       jwt.sign(
         payload,
-        config.get('secretkey'),
+        key,
         { expiresIn: 360000 },
         (err, token) => {
           if (err) throw err;

@@ -1,5 +1,5 @@
 const jwt = require('jsonwebtoken');
-const config = require('config');
+
 
 const middleware = (req, res, next) => {
 
@@ -9,7 +9,7 @@ const middleware = (req, res, next) => {
     res.status(401).json({ msg: 'No token, authorization denied' });
   }
 
-  const key = config.get('secretkey');
+  const key = "Mombu1234$";
 
   try {
     const decode = jwt.verify(token, key);
